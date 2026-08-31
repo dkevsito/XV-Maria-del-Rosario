@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>XV Años - María del Rosario</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family:Georgia,"Times New Roman",serif;
+    background:#fff7f9;
+    color:#624f57;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.invitacion{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.portada{
+    min-height:720px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(125,72,94,.45),
+        rgba(125,72,94,.62)
+    ),
+    url("Imagenes/WhatsApp Image 2026-08-30 at 14.42.02.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.portada-contenido{
+    width:92%;
+    max-width:900px;
+    padding:40px 20px;
+}
+
+.mini-titulo{
+    font-size:15px;
+    letter-spacing:7px;
+    margin-bottom:25px;
+}
+
+.portada h1{
+    margin:0;
+    font-size:58px;
+    line-height:1.2;
+    font-weight:normal;
+}
+
+.linea{
+    width:80px;
+    height:1px;
+    background:rgba(255,255,255,.8);
+    margin:30px auto;
+}
+
+.fecha{
+    font-size:19px;
+    letter-spacing:4px;
+    line-height:1.8;
+}
+
+.corazon{
+    font-size:30px;
+    margin-top:35px;
+}
+
+.bajar{
+    margin-top:35px;
+    font-size:12px;
+    letter-spacing:4px;
+}
+/* =========================
+   BOTÓN DE MÚSICA
+========================= */
+
+.boton-musica{
+    margin-top:25px;
+
+    padding:12px 25px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    border-radius:30px;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.boton-musica:hover{
+    background:rgba(255,255,255,.3);
+
+    transform:scale(1.05);
+}
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
+.seccion{
+    width:100%;
+    padding:85px 25px;
+    text-align:center;
+}
+
+.rosa{
+    background:#fff1f5;
+}
+
+.blanco{
+    background:#ffffff;
+}
+
+.titulo{
+    font-size:38px;
+    line-height:1.3;
+    font-weight:normal;
+    color:#a85f7b;
+    margin:0;
+}
+
+.subtitulo{
+    font-size:14px;
+    letter-spacing:4px;
+    color:#bd7892;
+    margin-bottom:18px;
+}
+
+.decoracion{
+    width:65px;
+    height:2px;
+    background:#e6aabd;
+    margin:24px auto 35px;
+}
+
+.texto{
+    max-width:700px;
+    margin:0 auto;
+    font-size:19px;
+    line-height:1.9;
+}
+
+
+/* =========================
+   INVITACIÓN
+========================= */
+
+.frase{
+    max-width:720px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.9;
+    font-style:italic;
+}
+
+.nombre{
+    margin-top:35px;
+    color:#a85f7b;
+    font-size:28px;
+}
+
+
+/* =========================
+   PADRES
+========================= */
+
+.tarjeta{
+    width:100%;
+    max-width:680px;
+    margin:0 auto;
+    padding:45px 30px;
+
+    background:#fff9fb;
+
+    border:1px solid #efcbd7;
+
+    border-radius:16px;
+}
+
+.icono{
+    font-size:48px;
+    color:#cf86a0;
+    margin-bottom:20px;
+}
+
+.nombre-padre{
+    font-size:22px;
+    line-height:1.7;
+    color:#735a64;
+}
+
+.rol{
+    font-size:13px;
+    letter-spacing:3px;
+    color:#bd7892;
+}
+
+
+/* =========================
+   CEREMONIA
+========================= */
+
+.seccion-ceremonia{
+    width:100%;
+    min-height:750px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:70px 25px;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(85,48,63,.50),
+        rgba(85,48,63,.65)
+    ),
+    url("Imagenes/23.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.evento{
+    width:100%;
+    max-width:650px;
+
+    padding:45px 25px;
+
+    background:rgba(255,255,255,.92);
+
+    border:1px solid rgba(239,203,215,.9);
+
+    border-radius:16px;
+
+    color:#624f57;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.15);
+}
+
+.evento-icono{
+    font-size:48px;
+    color:#bd7892;
+}
+
+.evento h3{
+    font-size:28px;
+    font-weight:normal;
+    color:#a85f7b;
+    margin:18px 0;
+}
+
+.hora{
+    font-size:21px;
+    color:#bd7892;
+}
+
+.boton{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 28px;
+
+    background:#c47f99;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================
+   RECEPCIÓN
+========================= */
+
+.recepcion{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+
+    padding:45px 30px;
+
+    background:#fff9fb;
+
+    border:1px solid #efcbd7;
+
+    border-radius:16px;
+}
+
+.recepcion h3{
+    font-size:32px;
+    font-weight:normal;
+    color:#a85f7b;
+    margin:15px 0;
+}
+
+
+/* =========================
+   VESTIMENTA
+========================= */
+
+.vestimenta{
+    width:100%;
+    min-height:650px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(85,48,63,.45),
+        rgba(85,48,63,.65)
+    ),
+    url("Imagenes/WhatsApp Image 2026-08-30 at 00.03.27.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:60px 20px;
+}
+
+.vestimenta-contenido{
+    width:100%;
+    max-width:750px;
+
+    padding:40px 25px;
+
+    background:rgba(60,35,45,.30);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(2px);
+}
+
+.vestimenta .subtitulo{
+    color:white;
+}
+
+.vestimenta .titulo{
+    color:white;
+    font-size:42px;
+}
+
+.vestimenta .decoracion{
+    background:rgba(255,255,255,.8);
+}
+
+.formal{
+    font-size:28px;
+    color:white;
+    margin:15px 0 25px;
+}
+
+.aviso{
+    max-width:700px;
+    margin:30px auto 0;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.92);
+
+    color:#624f57;
+
+    border:1px solid #efcbd7;
+
+    border-radius:12px;
+
+    line-height:1.8;
+}
+
+
+/* =========================
+   LLUVIA DE SOBRES
+========================= */
+
+.sobre-icono{
+    font-size:65px;
+    color:#c47f99;
+    margin-bottom:20px;
+}
+
+.dinero{
+    font-size:50px;
+    color:#c47f99;
+    margin-top:10px;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria{
+    width:100%;
+    max-width:1000px;
+    margin:40px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:14px;
+}
+
+.galeria img{
+    width:100%;
+    height:330px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:10px;
+}
+
+
+/* =========================
+   MÚSICA
+========================= */
+
+.musica{
+    max-width:650px;
+    margin:auto;
+
+    padding:35px 25px;
+
+    background:#fff9fb;
+
+    border:1px solid #efcbd7;
+
+    border-radius:15px;
+}
+
+.reproductor{
+    width:100%;
+    margin-top:25px;
+}
+
+
+/* =========================
+   CONFIRMACIÓN
+========================= */
+
+.confirmacion{
+    max-width:650px;
+    margin:auto;
+}
+
+.boton-confirmar{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:16px 32px;
+
+    background:#c47f99;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:15px;
+}
+
+
+/* =========================
+   CONTADOR
+========================= */
+
+.contador{
+    width:100%;
+    padding:75px 20px;
+
+    text-align:center;
+
+    font-family:Georgia,serif;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(85,48,63,.78),
+        rgba(85,48,63,.78)
+    ),
+    url("Imagenes/23.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.contador h2{
+    font-size:35px;
+    font-weight:normal;
+}
+
+.contador-linea{
+    width:70px;
+    height:2px;
+
+    background:#e3b9c8;
+
+    margin:20px auto 40px;
+}
+
+.contador-cajas{
+    max-width:800px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+.contador-caja{
+    width:170px;
+
+    padding:25px 10px;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.12);
+}
+
+.contador-numero{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.contador-texto{
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+    min-height:550px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(125,72,94,.75),
+        rgba(125,72,94,.75)
+    ),
+    url("Imagenes/WhatsApp Image 2026-08-30 at 00.03.27.jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+.final-contenido{
+    width:90%;
+    max-width:750px;
+}
+
+.final h2{
+    font-size:48px;
+    font-weight:normal;
+    line-height:1.3;
+}
+
+.final p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media(max-width:650px){
+
+    .portada{
+        min-height:650px;
+    }
+
+    .portada h1{
+        font-size:40px;
+    }
+
+    .mini-titulo{
+        font-size:13px;
+        letter-spacing:5px;
+    }
+
+    .fecha{
+        font-size:16px;
+        letter-spacing:3px;
+    }
+
+    .seccion{
+        padding:65px 18px;
+    }
+
+    .titulo{
+        font-size:31px;
+    }
+
+    .frase{
+        font-size:19px;
+    }
+
+    .texto{
+        font-size:17px;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+    }
+
+    .galeria img{
+        height:350px;
+    }
+
+    .seccion-ceremonia{
+        min-height:650px;
+        padding:40px 15px;
+    }
+
+    .evento{
+        padding:35px 18px;
+    }
+
+    .vestimenta{
+        min-height:600px;
+        padding:40px 15px;
+    }
+
+    .vestimenta-contenido{
+        padding:35px 18px;
+    }
+
+    .vestimenta .titulo{
+        font-size:34px;
+    }
+
+    .formal{
+        font-size:24px;
+    }
+
+    .final h2{
+        font-size:38px;
+    }
+
+    .contador-caja{
+        width:145px;
+    }
+
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+img{
+    max-width:100%;
+}
+
+
+/* =========================
+   AUDIO
+========================= */
+
+audio{
+    display:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<audio id="musicaFondo" autoplay loop>
+    <source src="Audio/Veo en ti la luz - Alan Menken - Violín COVER.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+const musica = document.getElementById("musicaFondo");
+
+musica.volume = 0.4;
+
+musica.play().catch(() => {
+});
+
+document.addEventListener("click", function iniciarMusica() {
+
+    musica.play();
+
+    document.removeEventListener("click", iniciarMusica);
+
+});
+
+document.addEventListener("touchstart", function iniciarMusica() {
+
+    musica.play();
+
+    document.removeEventListener("touchstart", iniciarMusica);
+
+});
+
+</script>
+
+
+<div class="invitacion">
+
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<section class="portada">
+
+    <div class="portada-contenido">
+
+        <div class="mini-titulo">
+            MIS XV AÑOS
+        </div>
+
+        <h1>
+            María del Rosario
+            <br>
+            Crespo Estrada
+        </h1>
+
+        <div class="linea"></div>
+
+        <div class="fecha">
+            12 DE SEPTIEMBRE DE 2026
+        </div>
+
+        <div class="corazon">
+            ♡
+        </div>
+<button id="botonMusica" class="boton-musica" onclick="controlarMusica()">
+    ▶ REPRODUCIR MÚSICA
+</button>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INVITACIÓN
+========================= -->
+
+<section class="seccion rosa">
+
+    <div class="subtitulo">
+        CON MUCHO CARIÑO
+    </div>
+
+    <h2 class="titulo">
+        Quiero compartir contigo
+    </h2>
+
+    <div class="decoracion"></div>
+
+    <p class="frase">
+        “Hay momentos que se vuelven inolvidables
+        cuando los compartimos con las personas
+        que queremos.”
+    </p>
+
+    <p class="texto" style="margin-top:30px;">
+        Con mucha ilusión quiero invitarte a celebrar
+        conmigo la llegada de mis XV años y compartir
+        juntos este día tan especial.
+    </p>
+
+    <div class="nombre">
+        María del Rosario
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PADRES
+========================= -->
+
+<section class="seccion blanco">
+
+    <div class="subtitulo">
+        CON LA BENDICIÓN DE DIOS
+    </div>
+
+    <h2 class="titulo">
+        Mis padres
+    </h2>
+
+    <div class="decoracion"></div>
+
+    <div class="tarjeta">
+
+        <div class="icono">
+            ♡
+        </div>
+
+        <div class="nombre-padre">
+
+            <strong>
+                Jesús Fernando Crespo Mexía
+            </strong>
+
+            <br>
+
+            <span class="rol">
+                PAPÁ
+            </span>
+
+        </div>
+
+        <div style="
+            width:45px;
+            height:1px;
+            background:#e6aabd;
+            margin:25px auto;
+        "></div>
+
+        <div class="nombre-padre">
+
+            <strong>
+                Clarisa del Carmen Estrada Toledo
+            </strong>
+
+            <br>
+
+            <span class="rol">
+                MAMÁ
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CEREMONIA
+========================= -->
+
+<section class="seccion-ceremonia">
+
+    <div class="evento">
+
+        <div class="evento-icono">
+            ✝
+        </div>
+
+        <h3>
+            Ceremonia Religiosa
+        </h3>
+
+        <div class="decoracion"></div>
+
+        <p class="texto">
+            Acompáñame a recibir la bendición
+            en este día tan especial.
+        </p>
+
+        <p style="
+            margin-top:25px;
+            font-size:18px;
+            line-height:1.8;
+        ">
+
+            <strong>
+                Parroquia
+            </strong>
+
+            <br>
+
+            San Juan Pablo II
+            <br>
+            (San Juan Bosco)
+            <br>
+            Ave. La Paz s/n. Entre Ave. de la Juventud y Centenario. Centro. Escuinapa, Sinaloa.
+
+            <br><br>
+
+            <span class="hora">
+                Misa:
+                <br>
+                Viernes, 11 de Septiembre de 2026.
+                <br>
+                6:00 p.m.
+            </span>
+
+        </p>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Iglesia%20San%20Juan%20Pablo%20II%2C%20El%20Rosario%2C%20Sinaloa"
+            target="_blank"
+            class="boton">
+
+            VER UBICACIÓN
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECEPCIÓN
+========================= -->
+
+<section class="seccion blanco">
+
+    <h2 class="titulo">
+        Recepción
+    </h2>
+
+    <div class="decoracion"></div>
+
+    <div class="recepcion">
+
+        <div style="
+            font-size:50px;
+            color:#bd7892;
+        ">
+            ♡
+        </div>
+
+        <h3>
+            Salón "Villas de Diana"
+        </h3>
+
+        <p style="
+            font-size:19px;
+            line-height:1.8;
+        ">
+
+            <strong>
+                Yucatan y Melchor Ocampo.
+                <br>
+                El Rosario, Sinaloa.
+            </strong>
+
+        </p>
+
+        <p class="hora">
+            Sábado, 12 de Septiembre de 2026.
+            <br>
+            7:00 p.m.
+        </p>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n+Villas+de+Diana+El+Rosario+Sinaloa"
+            target="_blank"
+            class="boton">
+
+            VER UBICACION
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     VESTIMENTA
+========================= -->
+
+<section class="vestimenta">
+
+    <div class="vestimenta-contenido">
+
+        <div class="aviso">
+
+            <strong>
+                IMPORTANTE
+            </strong>
+
+            <br><br>
+
+            La gama de colores
+            <strong>
+                dorado y beige
+            </strong>
+            está reservada exclusivamente
+            para la quinceañera.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LLUVIA DE SOBRES
+========================= -->
+
+<section class="seccion blanco">
+
+    <h2 class="titulo">
+        Lluvia de sobres
+    </h2>
+
+    <div class="decoracion"></div>
+
+    <p class="texto">
+
+        Tu presencia es el mejor regalo que podría recibir.
+
+        <br><br>
+
+        Si deseas obsequiarme algo,
+        tendremos un espacio especial
+        para la lluvia de sobres.
+
+    </p>
+
+    <div style="
+        font-size:55px;
+        color:#c47f99;
+        margin-top:30px;
+    ">
+        ✉ $
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTADOR
+========================= -->
+
+<section class="contador">
+
+    <div class="contador-cajas">
+
+        <div class="contador-caja">
+
+            <div id="dias" class="contador-numero">
+                00
+            </div>
+
+            <div class="contador-texto">
+                DÍAS
+            </div>
+
+        </div>
+
+
+        <div class="contador-caja">
+
+            <div id="horas" class="contador-numero">
+                00
+            </div>
+
+            <div class="contador-texto">
+                HORAS
+            </div>
+
+        </div>
+
+
+        <div class="contador-caja">
+
+            <div id="minutos" class="contador-numero">
+                00
+            </div>
+
+            <div class="contador-texto">
+                MINUTOS
+            </div>
+
+        </div>
+
+
+        <div class="contador-caja">
+
+            <div id="segundos" class="contador-numero">
+                00
+            </div>
+
+            <div class="contador-texto">
+                SEGUNDOS
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+const fechaEvento =
+new Date("2026-09-12T20:00:00").getTime();
+
+
+function actualizar(){
+
+    const ahora =
+    new Date().getTime();
+
+    const diferencia =
+    fechaEvento - ahora;
+
+
+    if(diferencia <= 0){
+
+        document.getElementById("dias").innerHTML="00";
+        document.getElementById("horas").innerHTML="00";
+        document.getElementById("minutos").innerHTML="00";
+        document.getElementById("segundos").innerHTML="00";
+
+        return;
+
+    }
+
+
+    const dias =
+    Math.floor(
+        diferencia/(1000*60*60*24)
+    );
+
+
+    const horas =
+    Math.floor(
+        (diferencia/(1000*60*60))%24
+    );
+
+
+    const minutos =
+    Math.floor(
+        (diferencia/(1000*60))%60
+    );
+
+
+    const segundos =
+    Math.floor(
+        (diferencia/1000)%60
+    );
+
+
+    document.getElementById("dias").innerHTML =
+    String(dias).padStart(2,"0");
+
+
+    document.getElementById("horas").innerHTML =
+    String(horas).padStart(2,"0");
+
+
+    document.getElementById("minutos").innerHTML =
+    String(minutos).padStart(2,"0");
+
+
+    document.getElementById("segundos").innerHTML =
+    String(segundos).padStart(2,"0");
+
+}
+
+
+actualizar();
+
+setInterval(actualizar,1000);
+
+</script>
+
+
+<!-- =========================
+     CONFIRMACIÓN
+========================= -->
+
+<section class="seccion rosa">
+
+    <div class="confirmacion">
+
+        <div style="
+            font-size:45px;
+            color:#c47f99;
+        ">
+            ♡
+        </div>
+
+        <h2 class="titulo">
+            Confirma tu asistencia
+        </h2>
+
+        <div class="decoracion"></div>
+
+        <p class="texto">
+            Será un placer contar contigo
+            en los XV Años de María del Rosario.
+        </p>
+
+        <a
+            href="https://wa.me/526951190508?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20A%C3%B1os%20de%20Mar%C3%ADa%20del%20Rosario."
+            class="boton-confirmar">
+
+            CONFIRMAR ASISTENCIA
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+    <div class="final-contenido">
+
+        <p style="
+            font-size:14px;
+            letter-spacing:5px;
+        ">
+            GRACIAS POR ACOMPAÑARME
+        </p>
+
+        <h2>
+            María del Rosario
+        </h2>
+
+        <p>
+            Mis XV Años
+        </p>
+
+        <div class="linea"></div>
+
+        <p>
+            12 • SEPTIEMBRE • 2026
+        </p>
+
+        <div style="
+            font-size:35px;
+            margin-top:35px;
+        ">
+            ♡
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+</body>
+
+</html>
+
